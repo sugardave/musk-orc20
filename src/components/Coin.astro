@@ -1,0 +1,21 @@
+---
+import muskImage from '../images/musk-coin.jpg';
+import {Image} from 'astro:assets';
+
+const {class: className, ...rest} = Astro.props;
+---
+
+<Image
+  src={muskImage}
+  alt="Paranoid man with rockets"
+  class:list={['coin', className]}
+  {...rest}
+/>
+<style>
+  .coin {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    width: auto;
+  }
+</style>
