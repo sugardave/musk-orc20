@@ -1,0 +1,26 @@
+---
+import Coin from './Coin.astro';
+---
+
+<div class="headerComponent">
+  <Coin class="headerCoin" />
+  <div class="tokenSymbol">MUSK</div>
+</div>
+<style>
+  .headerComponent {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1em;
+    margin: 0 auto;
+    border-bottom: #00000055 solid 1em;
+  }
+  .headerCoin {
+    height: 50px;
+  }
+  .tokenSymbol {
+    margin-left: 0.25em;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #000;
+  }
+</style>
