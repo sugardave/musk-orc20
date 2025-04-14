@@ -1,5 +1,7 @@
 ---
-
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import Tokenomics from '../components/Tokenomics.astro';
 ---
 
 <html lang="en">
@@ -11,6 +13,28 @@
     <title>musk.rehab</title>
   </head>
   <body>
-    <h1>TBD</h1>
+    <header>
+      <Header />
+    </header>
+    <Tokenomics />
+    <footer>
+      <Footer />
+    </footer>
+    <style>
+      html,
+      body {
+        font-family: Poppins, serif !important;
+        scroll-behavior: smooth;
+      }
+      body {
+        -webkit-font-smoothing: antialiased;
+      }
+      header {
+        margin-bottom: 2em;
+      }
+      footer {
+        margin-top: 2em;
+      }
+    </style>
   </body>
 </html>
