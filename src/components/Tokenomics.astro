@@ -1,7 +1,8 @@
 ---
-
+import TakoSwap from './TakoSwap.astro';
 ---
 
+<TakoSwap />
 <div class="tokenomicsContainer">
   <div></div>
   <div class="tokenomicsBox">
@@ -25,7 +26,12 @@
       </div>
       <div class="tokenomicsBodyItem">
         CA
-        <span>0xc5f53ff334f56E40168A81B7314FA5FEAbdbAB96</span>
+        <span>
+          <a
+            href="https://ogpuscan.io/address/0xc5f53ff334f56E40168A81B7314FA5FEAbdbAB96"
+            >0xc5f53ff334f56E40168A81B7314FA5FEAbdbAB96
+          </a>
+        </span>
       </div>
       <div class="tokenomicsBodyItem">NO TAX</div>
     </div>
@@ -76,5 +82,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  a {
+    color: #f9e9d2;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 </style>
